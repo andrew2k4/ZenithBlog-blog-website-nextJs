@@ -1,7 +1,8 @@
 import { BlogCard } from "@/components/ui/blogCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import Image from "next/image";
+import blogCardData from "../../fakeData/blogCardFakeData.json";
+import { LeftBlogCard } from "@/components/ui/leftBlogCard";
 
 export default function Home() {
   return (
@@ -20,9 +21,18 @@ export default function Home() {
           <Button className="bg-purple-700 px-4 py-6">Subscribe</Button>
         </div>
       </div>
-      <div className="mt-14 gap-4">
-        <p className="font-medium text-xl">Recent blog posts</p>
-        <BlogCard />
+      <div className="mt-14 gap-4 w-full">
+        <p className="font-medium text-xl mb-6">Recent blog posts</p>
+        <div
+          className="flex-row flex flex-1  items-center gap-2 "
+          style={{ width: "100%" }}
+        >
+          <BlogCard blogCard={blogCardData} />
+          <div className="flex flex-col flex-1 gap-2 " style={{ width: "50%" }}>
+            <LeftBlogCard blogCard={blogCardData} />
+            <LeftBlogCard blogCard={blogCardData} />
+          </div>
+        </div>
       </div>
     </div>
   );

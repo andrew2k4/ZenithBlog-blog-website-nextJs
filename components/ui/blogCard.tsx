@@ -1,21 +1,55 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import image from "./andrew.jpg";
+import { ArrowUpRight } from "lucide-react";
 
-export const BlogCard = () => {
+type blogCardProps = {
+  name: string;
+  date: string;
+  title: string;
+  description: string;
+  tag: string[];
+};
+
+export const BlogCard = ({ blogCard }: { blogCard: blogCardProps }) => {
   return (
-    <div>
-      <p>name . date</p>
-      <div>
-        <p>Titre</p>
-        <div>icon</div>
+    <div
+      className="gap-4 flex flex-col hover:bg-slate-50 p-4 rounded-lg h-fit"
+      style={{ width: "50%" }}
+    >
+      <Image
+        src={image}
+        alt="alt"
+        className="object-cover rounded p-0 m-0 "
+        style={{ aspectRatio: "18/7" }}
+      />
+      <div className="flex items-center">
+        <p className="text-purple-700 text-sm font-semibold ">
+          {blogCard.name}
+        </p>
+        <div className="h-2 w-2 bg-purple-700 rounded-full mx-1" />
+        <p className="text-purple-700 text-sm font-semibold ">
+          {blogCard.date}
+        </p>
+      </div>
+      <div className=" flex justify-between items-center ">
+        <p className="font-semibold text-xl">{blogCard.title}</p>
+        <ArrowUpRight size={24} className="font-semibold" />
       </div>
 
-      <p>description</p>
-      <div>
-        <p>Design</p>
-        <p>Research</p>
-        <p>Presentation</p>
+      <p className="text-muted-foreground line-clamp-4">
+        {blogCard.description}
+      </p>
+      <div className="flex justify-start gap-6 mt-4">
+        {blogCard.tag.map((b, i) => (
+          <p
+            className="bg-slate-100 py-1 px-3 rounded-full text-sky-900 font-medium"
+            key={i}
+          >
+            {blogCard.tag[i]}
+          </p>
+        ))}
       </div>
     </div>
   );
