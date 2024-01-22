@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import image from "./andrew.jpg";
@@ -14,14 +13,11 @@ type blogCardProps = {
 
 export const BlogCard = ({ blogCard }: { blogCard: blogCardProps }) => {
   return (
-    <div
-      className="gap-4 flex flex-col hover:bg-slate-50 p-4 rounded-lg h-fit"
-      style={{ width: "50%" }}
-    >
+    <div className="flex-1 gap-4 flex flex-col hover:bg-slate-50 p-4 rounded-lg w-full">
       <Image
         src={image}
         alt="alt"
-        className="object-cover rounded p-0 m-0 "
+        className="object-cover rounded p-0 m-0 w-full"
         style={{ aspectRatio: "18/7" }}
       />
       <div className="flex items-center">
