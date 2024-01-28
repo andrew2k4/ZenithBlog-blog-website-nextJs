@@ -27,29 +27,25 @@ export default function Home() {
         <p className="font-medium text-xl ">Recent blog posts</p>
         <div className=" flex">
           <div className="flex-1 w-1/2 ">
-            <BlogCard blogCard={blogCardData} />
+            <BlogCard blogCard={blogCardData[0]} />
           </div>
           <div className="flex flex-col gap-2 w-1/2">
             <div>
-              <LeftBlogCard blogCard={blogCardData} />
+              <LeftBlogCard blogCard={blogCardData[0]} />
             </div>
             <div>
-              <LeftBlogCard blogCard={blogCardData} />
+              <LeftBlogCard blogCard={blogCardData[0]} />
             </div>
           </div>
         </div>
       </div>
       <div className="flex gap-4 flex-col mt-24">
         <p className="font-medium text-xl mb-5">All blog post</p>
-        <div className="flex">
-          <BlogCard blogCard={blogCardData} />
-          <BlogCard blogCard={blogCardData} />
-          <BlogCard blogCard={blogCardData} />
-        </div>
-        <div className="flex">
-          <BlogCard blogCard={blogCardData} />
-          <BlogCard blogCard={blogCardData} />
-          <BlogCard blogCard={blogCardData} />
+
+        <div className="grid grid-cols-3 ">
+          {blogCardData.map((blogCard, i) => (
+            <BlogCard blogCard={blogCardData[i]} key={i} />
+          ))}
         </div>
       </div>
     </div>

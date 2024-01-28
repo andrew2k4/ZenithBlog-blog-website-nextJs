@@ -1,5 +1,10 @@
+import Tiptap from "@/components/tiptap";
 import React from "react";
 
 export default function Write() {
-  return <div></div>;
+  return (
+    <div>
+      <Tiptap />
+    </div>
+  );
 }

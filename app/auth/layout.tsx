@@ -8,5 +8,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <body className="bg-slate-50">{children}</body>;
+  return (
+    <body className=" flex flex-1 items-center justify-center w-full h-screen  bg-slate-50">
+      {children}
+    </body>
+  );
 }
