@@ -1,6 +1,5 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import image from "../../components/ui/andrew.jpg";
 import Image from "next/image";
 import { Heart, MessageCircle, Share2, UserRoundPlus } from "lucide-react";
 import Link from "next/link";
@@ -10,8 +9,10 @@ export default function page() {
     <div className=" w-full ">
       <div>
         <Image
-          src={image}
+          src="https://picsum.photos/800/600"
           alt="image"
+          width={800}
+          height={600}
           className="w-full object-fill"
           style={{ aspectRatio: 13 / 5 }}
         />

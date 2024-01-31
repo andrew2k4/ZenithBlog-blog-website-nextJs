@@ -4,6 +4,7 @@ import React from "react";
 import image from "./andrew.jpg";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { Badge } from "./badge";
 
 type blogCardProps = {
   name: string;
@@ -47,9 +48,9 @@ export const LeftBlogCard = ({ blogCard }: { blogCard: blogCardProps }) => {
             {blogCard.description}
           </p>
           <div className="flex justify-start  mt-4">
-            <p className="bg-slate-100 py-1 px-3 rounded-full text-sky-900 font-medium">
+            <Badge className="bg-slate-100 py-1 px-3 rounded-full text-sky-900 font-medium">
               Design
-            </p>
+            </Badge>
           </div>
         </div>
       </div>

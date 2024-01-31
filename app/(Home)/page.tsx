@@ -1,10 +1,44 @@
+"use client";
+import { useEffect, useState } from "react";
 import { BlogCard } from "@/components/ui/blogCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import blogCardData from "../../fakeData/blogCardFakeData.json";
 import { LeftBlogCard } from "@/components/ui/leftBlogCard";
+import useWindowDimensions from "@/lib/useWindowDimensions";
+import {
+  Carousel,
+  CarouselApi,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Home() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      console.log("current");
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  let { width } = useWindowDimensions();
+  if (!width) return;
+
   return (
     <div className="flex-1 w-full flex flex-col">
       <div className="flex flex-col justify-center items-center mt-28 gap-2">
@@ -25,24 +59,52 @@ export default function Home() {
       </div>
       <div className="mt-14 gap-4 w-full flex flex-1 flex-col">
         <p className="font-medium text-xl ">Recent blog posts</p>
-        <div className=" flex">
-          <div className="flex-1 w-1/2 ">
-            <BlogCard blogCard={blogCardData[0]} />
-          </div>
-          <div className="flex flex-col gap-2 w-1/2">
-            <div>
-              <LeftBlogCard blogCard={blogCardData[0]} />
+        {width < 1574 ? (
+          <Carousel
+            setApi={setApi}
+            className="w-full "
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <CarouselItem key={index}>
+                  <BlogCard blogCard={blogCardData[0]} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            {width > 768 ? (
+              <>
+                <CarouselNext />
+                <CarouselPrevious />
+              </>
+            ) : (
+              ""
+            )}
+          </Carousel>
+        ) : (
+          <div className=" flex">
+            <div className="flex-1 w-1/2 ">
+              <BlogCard blogCard={blogCardData[0]} />
             </div>
-            <div>
-              <LeftBlogCard blogCard={blogCardData[0]} />
+            <div className="flex flex-col gap-2 w-1/2">
+              <div>
+                <LeftBlogCard blogCard={blogCardData[0]} />
+              </div>
+              <div>
+                <LeftBlogCard blogCard={blogCardData[0]} />
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
       <div className="flex gap-4 flex-col mt-24">
         <p className="font-medium text-xl mb-5">All blog post</p>
 
-        <div className="grid grid-cols-3 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
           {blogCardData.map((blogCard, i) => (
             <BlogCard blogCard={blogCardData[i]} key={i} />
           ))}

@@ -16,7 +16,10 @@ export default function RootLayout({
   return (
     <body className={inter.className}>
       <Header />
-      <div className="flex-1 m-auto py-12" style={{ width: "80%" }}>
+      <div
+        className="flex-1 m-auto py-12 max-w-screen-xl mx-auto"
+        style={{ width: "80%" }}
+      >
         {children}
       </div>
     </body>

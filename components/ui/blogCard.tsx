@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { Badge } from "./badge";
 
 type blogCardProps = {
   name: string;
@@ -25,7 +26,7 @@ export const BlogCard = ({ blogCard }: { blogCard: blogCardProps }) => {
           style={{ aspectRatio: "18/7" }}
           priority={false}
         />
-        <div className="flex items-center">
+        <div className="flex w-full items-center m-0 p-0">
           <p className="text-purple-700 text-sm font-semibold ">
             {blogCard.name}
           </p>
@@ -42,14 +43,15 @@ export const BlogCard = ({ blogCard }: { blogCard: blogCardProps }) => {
         <p className="text-muted-foreground line-clamp-4">
           {blogCard.description}
         </p>
-        <div className="flex justify-start gap-6 mt-4">
-          {blogCard.tag.map((b, i) => (
-            <p
+        <div className="flex justify-start w-full gap-6 mt-4">
+          {blogCard.tag.slice(0, 2).map((b, i) => (
+            <Badge
+              variant="outline"
               className="bg-slate-100 py-1 px-3 rounded-full text-sky-900 font-medium"
               key={i}
             >
-              {blogCard.tag[i]}
-            </p>
+              {b}
+            </Badge>
           ))}
         </div>
       </div>
