@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function page() {
   return (
-    <div className=" w-full ">
+    <div className=" w-11/12 lg:w-full">
       <div>
         <Image
           src="https://picsum.photos/800/600"
@@ -31,8 +31,8 @@ export default function page() {
         </div>
       </div>
 
-      <div className=" mt-10 m-auto  w-4/5 ">
-        <h1 className="text-3xl font-bold ">
+      <div className=" mt-5 lg:mt-10  w-full lg:w-4/5 ">
+        <h1 className="text-xl lg:text-3xl font-bold ">
           À la découverte des Bibliothèques React : Un Tour d&apos;Horizon
         </h1>
         <p className="text-xs text-muted-foreground mt-4">
@@ -64,7 +64,10 @@ export default function page() {
         </div>
       </div>
 
-      <div id="blog-content" className=" m-auto my-14 w-4/5 text-black">
+      <div
+        id="blog-content"
+        className=" m-auto my-7 lg:my-14 w-full  lg:w-4/5 text-black"
+      >
         <p>
           React, la bibliothèque JavaScript créée par Facebook, a révolutionné
           le développement d&apos;interfaces utilisateur en proposant une
