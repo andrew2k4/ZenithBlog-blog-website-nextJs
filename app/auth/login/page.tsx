@@ -33,7 +33,7 @@ import {
   ControllerFieldState,
   UseFormStateReturn,
 } from "react-hook-form";
-import { ContentTextArea } from "@/src/features/post/ContextTextArea";
+
 import { Input } from "@/components/ui/input";
 import { FileSliders, LockKeyhole, Mail } from "lucide-react";
 import { Label } from "@/components/ui/label";
@@ -48,11 +48,7 @@ const LoginSchema = z.object({
 
 type LoginValues = z.infer<typeof LoginSchema>;
 
-type LoginProps = {
-  onSubmit: (Values: LoginValues) => Promise<string>;
-};
-
-export default function LayoutPropsLogin({ onSubmit }: LoginProps) {
+export default function LayoutPropsLogin() {
   const form = useZodForm({
     schema: LoginSchema,
   });
@@ -73,7 +69,7 @@ export default function LayoutPropsLogin({ onSubmit }: LoginProps) {
       </CardHeader>
 
       <CardContent>
-        <Form form={form} onSubmit={() => ""}>
+        <Form form={form} onSubmit={() => null}>
           <div className="grid w-full items-center gap-4">
             <FormField
               control={form.control}

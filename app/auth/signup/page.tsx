@@ -50,11 +50,7 @@ const SignupSchema = z
 
 type SignupValues = z.infer<typeof SignupSchema>;
 
-type SignupProps = {
-  onSubmit: (Values: SignupValues) => Promise<string>;
-};
-
-export default function Signup({ onSubmit }: SignupProps) {
+export default function Signup() {
   const form = useZodForm({
     schema: SignupSchema,
   });
