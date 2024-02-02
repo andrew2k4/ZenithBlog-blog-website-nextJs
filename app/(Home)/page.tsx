@@ -1,10 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
+
 import { BlogCard } from "@/components/blog/blogCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+
 import blogCardData from "../../fakeData/blogCardFakeData.json";
-import { LeftBlogCard } from "@/components/blog/blogCard/leftBlogCard";
+
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import {
   Carousel,
@@ -16,6 +18,7 @@ import {
 } from "@/components/ui/carousel";
 
 import Autoplay from "embla-carousel-autoplay";
+
 import Link from "next/link";
 
 export default function Home() {
@@ -40,8 +43,8 @@ export default function Home() {
   if (!width) return;
 
   return (
-    <div className="flex-1 w-full flex flex-col">
-      <div className="flex flex-col justify-center items-center mt-28 gap-2">
+    <main className="flex-1 w-full flex flex-col">
+      <section className="flex flex-col justify-center items-center mt-28 gap-2">
         <h6 className="text-purple-700 font-bold">Our blog</h6>
         <h1 className="text-5xl">
           Stories <span>and</span> interviews
@@ -56,8 +59,9 @@ export default function Home() {
             Subscribe
           </Button>
         </div>
-      </div>
-      <div className="mt-14 gap-4 w-full flex flex-1 flex-col">
+      </section>
+
+      <section className="mt-14 gap-4 w-full flex flex-1 flex-col">
         <p className="font-medium text-xl ">Recent blog posts</p>
         {width < 1574 ? (
           <Carousel
@@ -72,7 +76,7 @@ export default function Home() {
             <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (
                 <CarouselItem key={index}>
-                  <BlogCard blogCard={blogCardData[0]} />
+                  <BlogCard blogCard={blogCardData[0]} left={false} />
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -88,30 +92,26 @@ export default function Home() {
         ) : (
           <div className=" flex">
             <div className="flex-1 w-1/2 ">
-              <BlogCard blogCard={blogCardData[0]} />
+              <BlogCard blogCard={blogCardData[0]} left={false} />
             </div>
             <div className="flex flex-col gap-2 w-1/2">
-              <div>
-                <LeftBlogCard blogCard={blogCardData[0]} />
-              </div>
-              <div>
-                <LeftBlogCard blogCard={blogCardData[6]} />
-              </div>
+              <BlogCard left={true} blogCard={blogCardData[0]} />
+              <BlogCard left={true} blogCard={blogCardData[6]} />
             </div>
           </div>
         )}
-      </div>
-      <div className="flex gap-4 flex-col mt-24">
-        <p className="font-medium text-xl mb-5">All blog post</p>
+      </section>
 
+      <section className="flex gap-4 flex-col mt-24">
+        <p className="font-medium text-xl mb-5">All blog post</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
           {blogCardData.map((blogCard, i) => (
             <Link href="/blog" key={i}>
-              <BlogCard blogCard={blogCard} key={i} />
+              <BlogCard blogCard={blogCard} key={i} left={false} />
             </Link>
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
