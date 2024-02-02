@@ -8,124 +8,83 @@
     "tag": ["Design", "Research", "Presentation"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "John Smith",
+    "date": "15 Feb 2022",
+    "image": "https://source.unsplash.com/800x600/?nature",
+    "title": "The fascinating world of nature",
+    "description": "Exploring the beauty of nature and its wonders.",
+    "tag": ["Nature", "Exploration", "Photography"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Emily Rodriguez",
+    "date": "25 Mar 2022",
+    "image": "https://source.unsplash.com/800x600/?travel",
+    "title": "A journey around the globe",
+    "description": "Embarking on a global adventure, discovering diverse cultures.",
+    "tag": ["Travel", "Adventure", "Culture"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Alex Turner",
+    "date": "10 Apr 2022",
+    "image": "https://source.unsplash.com/800x600/?technology",
+    "title": "Innovation in Technology",
+    "description": "Exploring the latest advancements and innovations in technology.",
+    "tag": ["Technology", "Innovation", "Future"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Sophie Johnson",
+    "date": "5 May 2022",
+    "image": "https://source.unsplash.com/800x600/?food",
+    "title": "Culinary Delights",
+    "description": "A journey through the world of exquisite cuisines and flavors.",
+    "tag": ["Food", "Cuisine", "Gastronomy"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Daniel Brown",
+    "date": "12 Jun 2022",
+    "image": "https://source.unsplash.com/800x600/?architecture",
+    "title": "Architectural Marvels",
+    "description": "Discovering the beauty and innovation in architectural design.",
+    "tag": ["Architecture", "Design", "Innovation"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Mia Campbell",
+    "date": "20 Jul 2022",
+    "image": "https://source.unsplash.com/800x600/?music",
+    "title": "Harmony of Music",
+    "description": "Exploring the diverse world of music and its impact on cultures.",
+    "tag": ["Music", "Culture", "Harmony"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Ethan White",
+    "date": "8 Aug 2022",
+    "image": "https://source.unsplash.com/800x600/?science",
+    "title": "Frontiers of Science",
+    "description": "Unveiling the mysteries of the universe through scientific exploration.",
+    "tag": ["Science", "Exploration", "Discovery"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Olivia Turner",
+    "date": "16 Sep 2022",
+    "image": "https://source.unsplash.com/800x600/?sports",
+    "title": "Thrill of Sports",
+    "description": "Celebrating the excitement and passion in the world of sports.",
+    "tag": ["Sports", "Passion", "Athletics"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Lucas Martinez",
+    "date": "4 Oct 2022",
+    "image": "https://source.unsplash.com/800x600/?art",
+    "title": "Artistic Expressions",
+    "description": "Exploring the diverse and vibrant world of artistic creations.",
+    "tag": ["Art", "Creativity", "Expression"]
   },
   {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
-  },
-
-  {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
-  },
-  {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
-  },
-  {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
-  },
-  {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
-  },
-  {
-    "name": "Andrew Jonathan",
-    "date": "20 Jan 2022",
-    "image": "https://picsum.photos/800/600",
-    "title": "The best react library",
-    "description": " Certainly! Could you please provide more details or context for the petite description you are looking for? Are you referring to a specific topic, person, place, or something else? This will help me tailor the description to your needs.",
-    "tag": ["Design", "Research", "Presentation"]
+    "name": "Isabella Adams",
+    "date": "22 Nov 2022",
+    "image": "https://source.unsplash.com/800x600/?fashion",
+    "title": "Fashion Forward",
+    "description": "Diving into the ever-evolving world of fashion and style.",
+    "tag": ["Fashion", "Style", "Trends"]
   }
 ]
