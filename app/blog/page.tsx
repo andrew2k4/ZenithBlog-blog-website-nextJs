@@ -13,7 +13,6 @@ export default function page() {
           alt="image"
           width={800}
           height={600}
-          fill
           className="w-full "
           style={{ aspectRatio: 13 / 5 }}
           priority
