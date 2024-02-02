@@ -10,7 +10,7 @@ import { UserProfile } from "./auth/UserProfile";
 
 export const Header = async () => {
   const session = await getAuthSession();
-  console.log(session);
+
   return (
     <header className=" flex border-b border-b-accent fixed top-0 bg-background w-full z-20 justify-center">
       <div
