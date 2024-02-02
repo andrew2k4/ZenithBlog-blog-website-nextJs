@@ -14,7 +14,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+
 import Autoplay from "embla-carousel-autoplay";
 
 export default function Home() {
@@ -94,7 +94,7 @@ export default function Home() {
                 <LeftBlogCard blogCard={blogCardData[0]} />
               </div>
               <div>
-                <LeftBlogCard blogCard={blogCardData[0]} />
+                <LeftBlogCard blogCard={blogCardData[6]} />
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
           {blogCardData.map((blogCard, i) => (
-            <BlogCard blogCard={blogCardData[i]} key={i} />
+            <BlogCard blogCard={blogCard} key={i} />
           ))}
         </div>
       </div>

@@ -16,7 +16,6 @@ export default function page() {
           className="w-full "
           style={{ aspectRatio: 13 / 5 }}
           priority
-          loading="lazy"
         />
         <div className="flex gap-4 text-white  justify-center -mt-14">
           <div className="rounded-full  bg-slate-500 p-2 opacity-95">

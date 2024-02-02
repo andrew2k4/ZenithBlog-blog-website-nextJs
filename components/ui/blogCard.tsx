@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
@@ -25,7 +27,6 @@ export const BlogCard = ({ blogCard }: { blogCard: blogCardProps }) => {
           height={600}
           style={{ aspectRatio: "18/7" }}
           priority
-          loading="lazy"
         />
         <div className="flex w-full items-center m-0 p-0">
           <p className="text-purple-700 text-sm font-semibold ">

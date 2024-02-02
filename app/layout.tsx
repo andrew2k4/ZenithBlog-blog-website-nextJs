@@ -15,10 +15,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-      </head>
-
       {children}
       <SpeedInsights />
       <Analytics />
