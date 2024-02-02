@@ -3,14 +3,20 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 import { Heart, MessageCircle, Share2, UserRoundPlus } from "lucide-react";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function page() {
   return (
     <div className=" w-11/12 lg:w-full">
+      <Head>
+        <title>
+          À la découverte des Bibliothèques React : Un Tour d&apos;Horizon
+        </title>
+      </Head>
       <div>
         <Image
           src="https://picsum.photos/800/600"
-          alt="image"
+          alt=" À la découverte des Bibliothèques React : Un Tour d'Horizon"
           width={800}
           height={600}
           className="w-full "
@@ -39,12 +45,12 @@ export default function page() {
         <p className="text-xs text-muted-foreground mt-4">
           Posted 23 september 2024
         </p>
-        <h3 className="mt-5 text-sm">
+        <h2 className="mt-5 text-sm">
           Certainly! Could you please provide more details or context for the
           petite description you are looking for? Are you referring to a
           specific topic, person, place, or something else? This will help me
           tailor the description to your needs.
-        </h3>
+        </h2>
         {/*avatar*/}
         <div className="flex justify-between items-center mt-5">
           <div className="flex  items-center gap-2">
@@ -52,7 +58,7 @@ export default function page() {
               <AvatarImage src="https://github.com/shadcn.png" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
-            <p className="text-purple-700 text-sm">Olivia rodriguez</p>
+            <h3 className="text-purple-700 text-sm">Olivia rodriguez</h3>
           </div>
           <div className="flex gap-8 items-center text-muted-foreground">
             <Link href="" className="flex items-center gap-1">

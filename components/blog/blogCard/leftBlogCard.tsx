@@ -6,7 +6,7 @@ import React from "react";
 import image from "./andrew.jpg";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { Badge } from "./badge";
+import { Badge } from "../../ui/badge";
 
 type blogCardProps = {
   name: string;

@@ -1,12 +1,12 @@
 import React from "react";
-import { LoginButton } from "./auth/LoginButton";
+import { LoginButton } from "../auth/LoginButton";
 import Link from "next/link";
 import { getAuthSession } from "@/lib/auth";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@mui/material";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { UserProfile } from "./auth/UserProfile";
+import { UserProfile } from "../auth/UserProfile";
 
 export const Header = async () => {
   const session = await getAuthSession();
