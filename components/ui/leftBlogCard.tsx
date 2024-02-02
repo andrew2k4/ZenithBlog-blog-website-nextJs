@@ -26,6 +26,8 @@ export const LeftBlogCard = ({ blogCard }: { blogCard: blogCardProps }) => {
           height={600}
           className="flex-1 rounded"
           style={{ aspectRatio: "7/5", width: "50%" }}
+          priority
+          loading="lazy"
         />
 
         <div className=" flex gap-3 flex-col flex-1 w-1/2 ">

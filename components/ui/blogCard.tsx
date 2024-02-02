@@ -24,7 +24,8 @@ export const BlogCard = ({ blogCard }: { blogCard: blogCardProps }) => {
           width={800}
           height={600}
           style={{ aspectRatio: "18/7" }}
-          priority={false}
+          priority
+          loading="lazy"
         />
         <div className="flex w-full items-center m-0 p-0">
           <p className="text-purple-700 text-sm font-semibold ">
